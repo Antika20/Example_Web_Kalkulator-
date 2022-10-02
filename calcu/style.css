@@ -1,0 +1,75 @@
+/* 3. Menerapkan nilai border-box  */
+*{
+    box-sizing: border-box;
+}
+/* 4. Tetapkan font family   */
+
+body{
+    font-family: sans-serif;
+}
+/* 5. Terapkan flexbox pada plex conteiner column dan row   */
+.flex-container-column{
+    display: flex;
+    flex-direction: column;
+
+max-width: 800px;
+margin: 0 auto;
+text-align: right;
+}
+
+.flex-container-row{
+    display: flex;
+}
+
+/* 6. Pada tiap .button kita akan beri nilai flex-basis sebesar 25%   */
+.button{
+    flex-basis: 25%;
+
+font-size: 1.5em;
+text-align: center;
+padding: 40px;
+border: 1px solid black;
+background: -webkit-linear-gradient(top, #d2d2d2,#ddd);
+cursor: pointer;
+}
+
+.double{
+    flex-basis: 50%;
+}
+
+/* 7. Mempercantik display  */
+.display{
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #333333;
+    border: 1px solid black;
+    font-size: 2em;
+}
+
+/* 8. tombol kalkulator operator berwarna orange  */
+.operator,
+.negative,
+.equals {
+    background: orange;
+}
+
+/* 9. Membuat efek CARD pada calculator  */
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+/* 10. efek teks menjadi lebih tebal ketika kursor diarahkan  */
+.button:hover{
+    font-weight: bold;
+}
+
+/* 12.Membuat Rule css Responsive pada mobile  */
+@media screen and (max-width: 513px) {
+    .button{
+        padding: 10px;
+    }
+}
